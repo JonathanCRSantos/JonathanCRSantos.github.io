@@ -1,5 +1,71 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ecf0f1;
+}
+#container {
+  width: 90%;
+  padding: 15px 0;
+}
+#area-conteudo,
+#area-inicial {
+  margin: 5px 0;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+#area-inicial {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+#foto img {
+  display: block;
+  margin: 10px;
+  width: 200px;
+  border-radius: 100%;
+}
+#nome {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ecf0f1;
+}
+#nome h2,
+p {
+  text-align: start;
+}
+#nome h2 {
+  margin-top: 15px;
+}
+#nome p {
+  margin-top: 5px;
+}
+#area-inicial #contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#contato img {
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  color: #ecf0f1;
+}
+#area-conteudo {
+  margin-top: 20px;
+  padding: 15px;
+}
+#cabecalho {
+  color: #ecf0f1;
+  margin: 10px 30px;
+}
+#cabecalho p {
+  font-size: 1.2em;
+  margin-top: 10px;
 }
