@@ -64,7 +64,7 @@ p {
 }
 #cabecalho {
   color: #0d0d0d;
-  margin: 10px 30px;
+  margin: 20px 30px;
 }
 #cabecalho p {
   font-size: 1.2em;
@@ -76,17 +76,19 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
+  margin-bottom: 60px;
 }
 input {
   display: none;
 }
 .quadrado {
   width: 30%;
-  background-color: #ecf0f1;
-  box-shadow: 0 0 7px #bfbfbf;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 7px #afafaf;
   margin: 15px 0;
   border-radius: 10px;
   transition: 0.3s;
+  height: 100%;
 }
 .quadrado:hover {
   box-shadow: 0 0 10px #313b2f;
@@ -99,4 +101,34 @@ input {
   border-top-right-radius: 10px;
   padding: 20px;
   color: #ecf0f1;
+  text-align: center;
+}
+.conteudo-titulo {
+  margin: 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+.conteudo {
+  display: none;
+  padding: 7px 14px;
+  transition: 0.3s;
+}
+
+.trigger-input:checked + .trigger-wrapper .conteudo {
+  display: block;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #202020;
+  padding: 10px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #f2f2f2;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+label {
+  cursor: pointer;
 }
