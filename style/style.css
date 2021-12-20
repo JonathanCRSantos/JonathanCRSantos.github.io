@@ -62,11 +62,11 @@ p {
   padding: 15px;
   background-color: #f2f2f2;
 }
-#cabecalho {
+.cabecalho {
   color: #0d0d0d;
   margin: 20px 30px;
 }
-#cabecalho p {
+.cabecalho p {
   font-size: 1.2em;
   margin-top: 10px;
   margin-bottom: 50px;
@@ -74,15 +74,17 @@ p {
 .area-cont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
+}
+#area-cont_1 {
   margin-bottom: 60px;
 }
 input {
   display: none;
 }
 .quadrado {
-  width: 30%;
+  width: 45%;
   background-color: #f2f2f2;
   box-shadow: 0 0 7px #afafaf;
   margin: 15px 0;
@@ -139,4 +141,42 @@ label {
   padding: 15px;
   margin-top: 15px;
   text-align: center;
+  font-size: 0.9em;
+  color: #f2f2f2;
+}
+#direitos {
+  margin-bottom: 15px;
+}
+#links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#links div a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 10px;
+}
+@media screen and (max-width: 620px) {
+  .quadrado {
+    width: 85%;
+    margin-bottom: 25px;
+  }
+  .area-cont {
+    margin-bottom: 0;
+  }
+  .cabecalho {
+    text-align: center;
+  }
+  #area-conteudo {
+    padding: 5px 0;
+  }
+  #nome {
+    font-size: 0.95em;
+  }
+  #nome h2,
+  #nome p {
+    text-align: center;
+  }
 }
