@@ -6,7 +6,7 @@
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ecf0f1;
+  background-color: #202020;
 }
 #container {
   width: 90%;
@@ -15,7 +15,6 @@ body {
 #area-conteudo,
 #area-inicial {
   margin: 5px 0;
-  background-color: #34495e;
   border-radius: 10px;
 }
 #area-inicial {
@@ -24,6 +23,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 15px 0;
+  background-color: #0d0d0d;
 }
 #foto img {
   display: block;
@@ -60,12 +60,43 @@ p {
 #area-conteudo {
   margin-top: 20px;
   padding: 15px;
+  background-color: #f2f2f2;
 }
 #cabecalho {
-  color: #ecf0f1;
+  color: #0d0d0d;
   margin: 10px 30px;
 }
 #cabecalho p {
   font-size: 1.2em;
   margin-top: 10px;
+  margin-bottom: 50px;
+}
+.area-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+input {
+  display: none;
+}
+.quadrado {
+  width: 30%;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 7px #bfbfbf;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.quadrado:hover {
+  box-shadow: 0 0 10px #313b2f;
+  transition: 0.3s;
+}
+
+.quadrado .titulo {
+  background-color: #202020;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  color: #ecf0f1;
 }
